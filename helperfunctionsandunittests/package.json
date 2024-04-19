@@ -1,0 +1,15 @@
+{
+  "name": "helperfunctionsandunittests",
+  "version": "1.0.0",
+  "description": "A project with utility functions and their unit tests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./tests/list_tests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "supertest": "^6.3.4"
+  }
+}

@@ -1,0 +1,35 @@
+GET http://localhost:3003/api/blogs
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsImlkIjoiNjYxNDExNzc1MTkzNTNiYThlYjQ4MzZkIiwiaWF0IjoxNzEzMjg4NzMzfQ.gaHcT-eN3fPp9JPmhTj9vqwKgIJGpgAw0u_c5rlZudY
+
+{
+  "title": "foo",
+  "author": "bar",
+  "url": "http://www.foo.com",
+  "likes": 0,
+  "user": {"id":"66141177519353ba8eb4836d"}
+}
+
+DELETE http://localhost:3003/api/blogs/661d5b6bf4dd0925d78a37c6
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZvbyIsImlkIjoiNjYxNDExNzc1MTkzNTNiYThlYjQ4MzZkIiwiaWF0IjoxNzEzMjg4NzMzfQ.gaHcT-eN3fPp9JPmhTj9vqwKgIJGpgAw0u_c5rlZudY
+
+GET http://localhost:3003/api/users
+
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "foo",
+  "password": "understood00",
+  "blogs": []
+}
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "foo",
+  "password": "understood00"
+}
